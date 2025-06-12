@@ -1,4 +1,5 @@
 h2 {
+    font-family: cursive;
     text-align: center;
 	margin: 5px;
 	background:linear-gradient( to left, white, #ffefaf);
@@ -9,7 +10,7 @@ h2 {
 h1 {
     text-align: center;
     text-shadow:
-    1px 1px 2px red,
+    1px 1px 2px rgb(255, 251, 0),
     0 0 1em blue,
     0 0 0.2em blue;
 	color: black;
@@ -18,7 +19,6 @@ h1 {
 }
 h3 {
     text-align: center;
-	font-family: cursive;
 	color: #3f3faf;
 	margin: 5px;
 	background:linear-gradient( to left, white, rgb(0, 255, 140));

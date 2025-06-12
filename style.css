@@ -23,7 +23,7 @@ h3 {
 	margin: 5px;
 	background:linear-gradient( to left, white, rgb(0, 255, 140));
 }
-p#1 {
+.p#1 {
     color: white;
     text-shadow: rgb(0, 255, 242) 1px 0 10px;
 }
@@ -32,4 +32,7 @@ h4 {
     color: blue;
     text-shadow: rgb(246, 255, 0) 1px 0 10px;
     font-size: larger;
+}
+p{
+    text-align: center;
 }

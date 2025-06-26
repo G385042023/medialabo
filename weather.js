@@ -11,6 +11,13 @@ function print(data) {
   console.log("緯度: " + data.coord.lat);
   console.log("経度: " + data.coord.lon);
 }
+//課題4-2 コンソールに都市IDを載せる
+const btn = document.querySelector('#searchBtn');
+btn.addEventListener('click', weather);
+function weather() {
+  const selectedCity = document.querySelector('#citySelect').value;
+  console.log('都市ID:', selectedCity);
+}
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {

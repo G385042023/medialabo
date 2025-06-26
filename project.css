@@ -18,6 +18,7 @@ body{
             #caff38ff 8.25% 16.5%,
             #30f88aff 16.5% 25%
         );
+        text-align: center;
     }
 
 h1{
@@ -47,3 +48,8 @@ p#city{
     font-size: x-large;
     color: #3f3faf;
 }
+ul {
+    display: inline-block;
+    text-align: left; 
+  }
+  

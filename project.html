@@ -9,7 +9,23 @@
   <body>
 <h1>世界の天気</h1>
 <h2>詳しい気象情報</h2>
-<button><form>検索</form></button>
+<label for="citySelect">都市を選択：</label>
+  <select id="citySelect">
+    <option value="360630">カイロ（エジプト）</option>
+    <option value="524901">モスクワ（ロシア）</option>
+    <option value="993800">ヨハネスブルク（南アフリカ）</option>
+    <option value="1816670">北京（中華人民共和国）</option>
+    <option value="1850147">東京（日本）</option>
+    <option value="1880252">シンガポール</option>
+    <option value="2147714">シドニー（オーストラリア）</option>
+    <option value="2643743">ロンドン（イギリス）</option>
+    <option value="2968815">パリ（フランス）</option>
+    <option value="3451189">リオデジャネイロ（ブラジル）</option>
+    <option value="5128581">ニューヨーク（アメリカ合衆国）</option>
+    <option value="5368361">ロサンゼルス（アメリカ合衆国）</option>
+  </select>
+
+  <button id="searchBtn">気象情報を見る</button>
 <p id="city"><imput><strong>都市名: 北京市</strong></imput></p>
 <ul>
     <li>天気:  曇りがち</li>

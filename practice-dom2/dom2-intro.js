@@ -1,8 +1,14 @@
 
 let b = document.querySelector('button#henkou'); 
-b.addEventListener('click', changedom); 
+b.addEventListener('click', changeDom); 
 
 function changeDom(){
+    
+    let l = document.createElement('li'); 
+    let u = document.querySelector('ul#kazoeuta'); 
+    l.textContent = 'ヨット'; 
+    u.insertAdjacentElement('beforeend', l) 
+
     let i = document.querySelector('img#bluemoon');
     i.setAttribute('src', 'bluemoon.jpg');
     let a = document.createElement('a');
@@ -18,15 +24,15 @@ function changeDom(){
 
     l = document.createElement('li');
     l.textContent = '赤';
-    u.insertAdjacentElement('beforeenf', l);
+    u.insertAdjacentElement('beforeend', l);
 
     l = document.createElement('li');
     l.textContent = '緑';
-    u.insertAdjacentElement('beforeenf', l);
+    u.insertAdjacentElement('beforeend', l);
 
     l = document.createElement('li');
     l.textContent = '青';
-    u.insertAdjacentElement('beforeenf', l);
+    u.insertAdjacentElement('beforeend', l);
 
     p = document.querySelector('p#primary');
     p.insertAdjacentElement('afterend', u);

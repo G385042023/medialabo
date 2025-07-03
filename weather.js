@@ -19,10 +19,46 @@ function weather() {
   console.log('都市ID:', selectedCity);
 }
 
+///let dom = document.querySelector('button#searchBtn'); 
+///dom.addEventListener('click', function () {
+  ///printDom(data); 
+///}); 
+
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  let old = document.querySelector('#result');
+  let div = document.createElement('div');
+  div.id = 'result';
 
+  let h2 = document.createElement('h2');
+  h2.textContent = "都市名: " + data.name;
+  div.insertAdjacentElement('beforeend', h2);
+
+  let ul = document.createElement('ul');
+
+  let items = [
+    "天気: " + data.weather[0].description,
+    "最低気温: " + data.main.temp_min + " ℃",
+    "最高気温: " + data.main.temp_max + " ℃",
+    "湿度: " + data.main.humidity + " %",
+    "風速: " + data.wind.speed + " m/s",
+    "風向: " + data.wind.deg,
+    "緯度: " + data.coord.lat + "°",
+    "経度: " + data.coord.lon + "°"
+  ];
+
+ 
+  for (let text of items) {
+    let li = document.createElement('li');
+    li.textContent = text;
+    ul.insertAdjacentElement('beforeend', li);
+  }
+
+  div.insertAdjacentElement('beforeend', ul);
+
+  document.body.insertAdjacentElement('beforeend', div);
 }
+
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 

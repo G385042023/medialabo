@@ -17,13 +17,12 @@ let gakka = [
 //////////////// ここから下にプログラムを書きたそう!
 
 function show() {
-    // 住所の表示
+   
     let l = document.querySelector('h2#addr');
     let u = document.createElement('p');
     u.textContent = campus.address;
     l.insertAdjacentElement('afterend', u);
 
-    // 学科一覧の表示
     let a = document.querySelector('h2#dept');
     let ul = document.createElement('ul');
 
